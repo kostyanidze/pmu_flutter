@@ -13,8 +13,9 @@ class DetailsPage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          const Align(alignment: Alignment.topCenter),
           Padding(padding: const EdgeInsets.only(bottom: 16.0),
           child: Image.network(data.imageUrl ?? '',),
           ),
