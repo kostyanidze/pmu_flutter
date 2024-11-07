@@ -56,6 +56,55 @@ class body extends StatelessWidget {
         imageUrl:
         'https://static.wikia.nocookie.net/wowpedia/images/9/92/Swagdog_Custom_T-shirt_Shaman_Class_Icon.jpg/revision/latest?cb=20100917162133',
       ),
+      CardData(
+        'Death Knight',
+        descriptionText: 'Tank/dps class',
+        icon: Icons.accessible_forward,
+        imageUrl:
+        'https://static.wikia.nocookie.net/wowpedia/images/6/6d/Swagdog_Custom_T-shirt_Death_Knight_Class_Icon.jpg/revision/latest?cb=20100917162311',
+      ),
+      CardData(
+        'Druid',
+        descriptionText: 'Tank/heal/dps class',
+        icon: Icons.hail,
+        imageUrl:
+        'https://static.wikia.nocookie.net/wowpedia/images/0/00/Swagdog_Custom_T-shirt_Druid_Class_Icon.jpg/revision/latest?cb=20110530183510',
+      ),
+      CardData(
+        'Hunter',
+        descriptionText: 'Dps class',
+        icon: Icons.warning_amber,
+        imageUrl:
+        'https://static.wikia.nocookie.net/wowpedia/images/e/e9/Swagdog_Custom_T-shirt_Hunter_Class_Icon.jpg/revision/latest?cb=20100917162106',
+      ),
+      CardData(
+        'Mage',
+        descriptionText: 'Dps class',
+        icon: Icons.accessible_forward,
+        imageUrl:
+        'https://static.wikia.nocookie.net/wowpedia/images/7/71/Swagdog_Custom_T-shirt_Mage_Class_Icon.jpg/revision/latest?cb=20100917161942',
+      ),
+      CardData(
+        'Priest',
+        descriptionText: 'Heal/dps class',
+        icon: Icons.hail,
+        imageUrl:
+        'https://static.wikia.nocookie.net/wowpedia/images/7/73/Swagdog_Custom_T-shirt_Priest_Class_Icon.jpg/revision/latest?cb=20100914173235',
+      ),
+      CardData(
+        'Rogue',
+        descriptionText: 'Dps class',
+        icon: Icons.warning_amber,
+        imageUrl:
+        'https://static.wikia.nocookie.net/wowpedia/images/c/c3/Swagdog_Custom_T-shirt_Rogue_Class_Icon.jpg/revision/latest?cb=20100917162509',
+      ),
+      CardData(
+        'Warlock',
+        descriptionText: 'Dps class',
+        icon: Icons.warning_amber,
+        imageUrl:
+        'https://static.wikia.nocookie.net/wowpedia/images/0/0d/Swagdog_Custom_T-shirt_Warlock_Class_Icon.jpg/revision/latest?cb=20100917162211',
+      ),
     ];
 
     return Center(
@@ -85,7 +134,7 @@ class body extends StatelessWidget {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text(
-          'Racoon $title ${isLiked ? 'liked!' : 'disliked :('}',
+          '$title ${isLiked ? 'added to favorite.' : 'removed from favorite.'}',
           style: Theme.of(context).textTheme.bodyLarge,
         ),
         backgroundColor: Colors.orangeAccent,
